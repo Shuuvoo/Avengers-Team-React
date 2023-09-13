@@ -4,6 +4,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/Home/Home'
+// import '@sweetalert2/themes/dark/dark.scss';
+import swal from 'sweetalert';
+
 
 function App() {
   const [count, setCount] = useState(0)

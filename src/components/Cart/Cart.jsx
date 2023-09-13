@@ -5,7 +5,7 @@ import './Cart.css'
 const Cart = ({selectedActors,remaining,totalCost}) => {
     console.log(selectedActors)
     return (
-        <div>
+        <div className='cart-css'>
             <h2>Total Actors :{selectedActors.length}</h2>
             <h3>Total Cost : {totalCost}</h3>
             <h4>Remaining : {remaining} $</h4>

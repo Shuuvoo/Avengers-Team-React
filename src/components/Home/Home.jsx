@@ -3,6 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import './Home.css'
+// import '@sweetalert2/themes/dark/dark.scss';
+import swal from 'sweetalert';
+
 const Home = () => {
 
     const [allActors, setAllActors] = useState([])
@@ -35,7 +38,7 @@ const Home = () => {
                 const totalRemaining = 20000 - count
                 
 
-                if(count > 20000){
+                if(count > 30000){
                     return alert('You Have exceeded')
                 }
 
