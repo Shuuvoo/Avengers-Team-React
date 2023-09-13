@@ -17,7 +17,14 @@ const Home = () => {
         ,[])
 
         const handleSelectActor = (actor) =>{
-            setSelectedActors([...selectedActors, actor])
+            const isExit = selectedActors.find((item) => item.id === actor.id)
+            if(isExit) {
+                return alert('Already selected')
+            }
+            else{
+                setSelectedActors([...selectedActors, actor])
+            }
+            
             
         }
 
@@ -45,7 +52,7 @@ const Home = () => {
             }
             </div>
             <div className="cart">
-                <h2>This is Cart</h2>
+               <Cart selectedActors={selectedActors}></Cart>
             </div>
            </div>
            
