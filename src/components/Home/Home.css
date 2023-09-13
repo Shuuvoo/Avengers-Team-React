@@ -1,0 +1,39 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:url('https://i.ibb.co/JB1y0X5/4690.jpg') ,
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.home-container{
+    display: flex;
+}
+.card-container{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.card{
+    /* color: green; */
+    width: 250px;
+    height: 350px;
+    border: 1px solid gray !important;
+}
+.photo{
+    /* width: 80px;
+    border-radius: 50px; */
+    border-radius: 35px;
+    width: 80px;
+    
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart-btn{
+    background-color: rgb(207, 207, 67);
+    color: rgb(16, 22, 11);
+}
